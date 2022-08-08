@@ -16,7 +16,7 @@ def _sort(data):
 
 
 def _filter(data):
-    return [x for x in data if int(x[1]) > 10]
+    return list(filter(lambda x: int(x[1]) > 10, data)) #[x for x in data if int(x[1]) > 10]
 
 if __name__ == "__main__":
     print(get_users_list())
